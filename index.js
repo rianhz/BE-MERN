@@ -10,5 +10,5 @@ app.use(express.json());
 app.use('/mahasiswa', mahasiswaRoute);
 app.use('/dosen', dosenRoute);
 app.listen(5000, () => {
-  console.log('server upp');
+  console.log('server uppss');
 });
