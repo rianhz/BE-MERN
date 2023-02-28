@@ -1,5 +1,4 @@
-import * as dotenv from 'dotenv';
-dotenv.config();
+import 'dotenv/config.js';
 import express from 'express';
 import dosenRoute from './routers/dosenRouter.js';
 import mahasiswaRoute from './routers/mahasiswaRouter.js';
