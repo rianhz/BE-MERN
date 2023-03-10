@@ -12,7 +12,7 @@ export const addDosen = (req, res) => {
   const { mata_kuliah } = req.body;
   db.query(`INSERT INTO dosen (nama,nik,mata_kuliah) VALUES ('${nama}',${nik},'${mata_kuliah}')`, (err, result) => {
     res.json(result);
-    console.log(req.body);
+    console.log(result);
   });
 };
 

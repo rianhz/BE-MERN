@@ -2,6 +2,7 @@ import db from '../config/connection.js';
 
 export const getAllMahasiswa = (req, res) => {
   db.query('SELECT * FROM mahasiswa', (err, result) => {
+    // console.log(result);
     res.json(result);
   });
 };
@@ -10,6 +11,7 @@ export const addMahasiswa = (req, res) => {
   const { nama } = req.body;
   const { nim } = req.body;
   const { jurusan } = req.body;
+
   db.query(`INSERT INTO mahasiswa (nama,nim,jurusan) VALUES ('${nama}',${nim},'${jurusan}')`, (err, result) => {
     res.json(result);
     console.log(req.body);
