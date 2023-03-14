@@ -1,4 +1,4 @@
-import db from '../config/connection.js';
+import sequelize from '../config/sequelize.js';
 
 export const getAllDosen = (req, res) => {
   db.query('SELECT * FROM dosen', (err, result) => {
